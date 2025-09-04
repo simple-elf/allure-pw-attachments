@@ -1,48 +1,37 @@
 name: Allure Reports with history
 
+
+# on every push every branch except gh-pages
 on:
   #schedule:
   #  - cron: '*/5 * * * *' # every 5 minutes
   push:
     branches-ignore:
-      - '!master' # ignore gh-pages
-    paths:
-      - '!.gitlab-ci.yml'
-      - '!allure-template.yml'
-      - '**/allure-history.yml'
-      - 'allure-report-action/*'
+      - 'gh-pages' # ignore gh-pages
+#    paths:
+#      - '!.gitlab-ci.yml'
+#      - '!allure-template.yml'
+#      - '**/allure-history.yml'
+#      - 'allure-report-action/*'
+
 
 jobs:
   autotests:
     name: Upload allure results to Allure EE
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
-      - uses: actions/cache@v1
-        with:
-          path: |
-            ~/.m2/repository
-            ~/.gradle/caches
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
-
-      - name: Set up JDK
-        uses: actions/setup-java@v1
-        with:
-          java-version: 1.8
+      - uses: actions/checkout@v4
 
       - name: Install dependencies
-        run: ./gradlew compileTestJava
+        run: yarn install --frozen-lockfile
 
       - name: Run Test
         if: always()
-        run: ./gradlew test
+        run: yarn test
         continue-on-error: true
 
       - name: Get Allure history
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         if: always()
         continue-on-error: true
         with:
@@ -55,9 +44,9 @@ jobs:
         if: always()
         #id: allure-report
         with:
-          allure_results: build/allure-results
+          allure_results: playwright-report
           allure_history: allure-history/allure-history
-          keep_reports: 5
+          keep_reports: 10
 
       - name: Deploy report to Github Pages
         if: always()
