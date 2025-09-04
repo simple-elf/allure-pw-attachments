@@ -25,6 +25,9 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
+      - name: Install playwright
+        run: yarn playwright install
+
       - name: Run Test
         if: always()
         run: yarn test
