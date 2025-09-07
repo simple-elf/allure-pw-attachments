@@ -19,6 +19,8 @@ jobs:
   autotests:
     name: Upload allure results to Allure EE
     runs-on: ubuntu-latest
+    permissions:
+      contents: write   # 👈 required
     steps:
       - uses: actions/checkout@v4
 
@@ -47,7 +49,7 @@ jobs:
         with:
           allure_results: playwright-report
           allure_history: allure-history/allure-history
-          keep_reports: 10
+          keep_reports: 3
 
       - name: Deploy report to Github Pages
         if: always()
