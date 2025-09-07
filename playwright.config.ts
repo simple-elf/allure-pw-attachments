@@ -8,7 +8,8 @@ const config: PlaywrightTestConfig = {
       'allure-playwright',
       {
         environmentInfo: {
-          //node_version: process.version,
+          'playwright': '1.52.0',
+          'allure-playwright': '3.1.0'
         },
         resultsDir: 'playwright-report',
       },
