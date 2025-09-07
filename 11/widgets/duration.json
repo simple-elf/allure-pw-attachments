@@ -1,0 +1,1 @@
+[{"uid":"1280af7cb6d55225","name":"Главная страница содержит заголовок","time":{"start":1757268722545,"stop":1757268723279,"duration":734},"status":"passed","severity":"normal"},{"uid":"61375fa7234bb6e","name":"Главная страница содержит заголовок diff","time":{"start":1757268722544,"stop":1757268723267,"duration":723},"status":"passed","severity":"normal"}]
