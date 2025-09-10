@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","882","Главная страница содержит заголовок","","Wed Sep 10 12:44:40 UTC 2025","passed","Wed Sep 10 12:44:41 UTC 2025","","example.spec.ts","",""
+"","891","Главная страница содержит заголовок diff","","Wed Sep 10 12:44:40 UTC 2025","passed","Wed Sep 10 12:44:41 UTC 2025","","example-diff.spec.ts","",""
