@@ -10,14 +10,6 @@ test.afterEach(async ({}, testInfo) => {
 });
 
 test('Главная страница содержит заголовок', async ({ page }) => {
-  test.beforeEach(async ({}, testInfo) => {
-    await allure.attachment('attachment', 'Данные перед тестом 2', 'text/plain');
-  });
-
-  test.afterEach(async ({}, testInfo) => {
-    await allure.attachment('attachment', 'Данные после теста 2', 'text/plain');
-  });
-
   await allure.attachment('attachment', 'Данные внутри теста', 'text/plain');
 
   await allure.step('Переход на главную страницу', async () => {
