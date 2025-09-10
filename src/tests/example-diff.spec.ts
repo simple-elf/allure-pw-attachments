@@ -10,6 +10,14 @@ test.afterEach(async ({}, testInfo) => {
 });
 
 test('Главная страница содержит заголовок diff', async ({ page }) => {
+  test.beforeEach(async ({}, testInfo) => {
+    await allure.attachment('beforeEach-attachment', 'Данные перед тестом 2', 'text/plain');
+  });
+
+  test.afterEach(async ({}, testInfo) => {
+    await allure.attachment('afterEach-attachment', 'Данные после теста 2', 'text/plain');
+  });
+
   await allure.attachment('test-attachment', 'Данные внутри теста', 'text/plain');
 
   await allure.step('Переход на главную страницу', async () => {
