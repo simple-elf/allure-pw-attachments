@@ -9,19 +9,19 @@
   dependencies:
     playwright "1.55.0"
 
-allure-js-commons@3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/allure-js-commons/-/allure-js-commons-3.3.3.tgz#4e425ca219dedef11a25d74d392f1bb0c8699721"
-  integrity sha512-MLkPWrVtrt/2TdAvaExNSM8yTuY/lEo+MSLoM2DOUUsWzbzki8XIxHoX+mSdkatZAJargsU9JeO/dL5kQyR5IQ==
+allure-js-commons@3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/allure-js-commons/-/allure-js-commons-3.4.0.tgz#54a261512c21088835a26fe9a6a1b1df9fc43bc8"
+  integrity sha512-NQxwDiee8uBA09JLO04Hfez2B29YVuLYL9c7xpNVqQ5W/kQ1ogs8rP48+08GNc19S0IKHV2WATDx9gQ8tcRrIw==
   dependencies:
     md5 "^2.3.0"
 
-allure-playwright@3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/allure-playwright/-/allure-playwright-3.3.3.tgz#44f403fd8916a89c28a6af3bbecf627b7a7b81a8"
-  integrity sha512-f5+PsYJVBG9igcD2ldzRHOx4kMiuqyoezpneQd94R08I/S3lL/MvdMNmkT1vet8KYB8tsV1OuK17PZexnFaC+w==
+allure-playwright@3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/allure-playwright/-/allure-playwright-3.4.0.tgz#d5847ed02ddaf173abf679a633e0c3247d180fa1"
+  integrity sha512-Nf0hMMhB3Mj30I1b+k6mLVlk9s8ThpK0pq8R/Dvj0+8fZ3chn3fRhWJQcIFM/nlNu3Kz5iYHz8If8sPFbcAXqA==
   dependencies:
-    allure-js-commons "3.3.3"
+    allure-js-commons "3.4.0"
 
 charenc@0.0.2:
   version "0.0.2"

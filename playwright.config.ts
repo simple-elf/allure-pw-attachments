@@ -9,7 +9,7 @@ const config: PlaywrightTestConfig = {
       {
         environmentInfo: {
           'playwright': '1.55.0',
-          'allure-playwright': '3.3.3'
+          'allure-playwright': '3.4.0'
         },
         resultsDir: 'playwright-report',
       },
