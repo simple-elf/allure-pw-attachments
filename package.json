@@ -7,7 +7,6 @@
     "allure:open": "allure open allure-report"
   },
   "devDependencies": {
-    "@playwright/test": "1.54.0",
     "@playwright/test": "1.55.0",
     "typescript": "^5.4.0"
   }
