@@ -596,19 +596,19 @@ adm-zip@^0.5.16:
   resolved "https://registry.yarnpkg.com/adm-zip/-/adm-zip-0.5.16.tgz#0b5e4c779f07dedea5805cdccb1147071d94a909"
   integrity sha512-TGw5yVi4saajsSEgz25grObGHEUaDrniwvA2qwSC060KfqGPdglhvPMA2lPIoxs3PQIItj2iag35fONcQqgUaQ==
 
-allure-js-commons@3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/allure-js-commons/-/allure-js-commons-3.4.0.tgz#54a261512c21088835a26fe9a6a1b1df9fc43bc8"
-  integrity sha512-NQxwDiee8uBA09JLO04Hfez2B29YVuLYL9c7xpNVqQ5W/kQ1ogs8rP48+08GNc19S0IKHV2WATDx9gQ8tcRrIw==
+allure-js-commons@3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/allure-js-commons/-/allure-js-commons-3.4.1.tgz#2aaed0424c5385154a1aad1fefe779307856138f"
+  integrity sha512-Lzs91+8fTPUucnLwQULuuLyEJWQCBCxsZl5tX6lMPFZcAVXgwu/Dti0XfzhH9R1Hw8e43k20XAlmyh/ZDqqpYA==
   dependencies:
     md5 "^2.3.0"
 
-allure-playwright@3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/allure-playwright/-/allure-playwright-3.4.0.tgz#d5847ed02ddaf173abf679a633e0c3247d180fa1"
-  integrity sha512-Nf0hMMhB3Mj30I1b+k6mLVlk9s8ThpK0pq8R/Dvj0+8fZ3chn3fRhWJQcIFM/nlNu3Kz5iYHz8If8sPFbcAXqA==
+allure-playwright@3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/allure-playwright/-/allure-playwright-3.4.1.tgz#75447a341badd196917c53b17f984f4f4d612ce1"
+  integrity sha512-vSc+7iBmilejRbSiv0dakl+/EONHFUs3yDmEOydKmF0+aOMczRyMYOBvU42Ob51PrZozi11ExiQj9SCMH0c4bQ==
   dependencies:
-    allure-js-commons "3.4.0"
+    allure-js-commons "3.4.1"
 
 allure@^3.0.0-beta.18:
   version "3.0.0-beta.18"
