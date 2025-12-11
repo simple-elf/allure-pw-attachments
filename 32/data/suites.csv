@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","540","Главная страница содержит заголовок 2","","Thu Dec 11 11:31:53 UTC 2025","passed","Thu Dec 11 11:31:53 UTC 2025","Тест класс","example-diff.spec.ts","",""
+"","554","Главная страница содержит заголовок 2","","Thu Dec 11 11:31:53 UTC 2025","passed","Thu Dec 11 11:31:53 UTC 2025","Тест класс","example.spec.ts","",""
+"","6042","Главная страница содержит заголовок","","Thu Dec 11 11:31:45 UTC 2025","failed","Thu Dec 11 11:31:51 UTC 2025","Тест класс","example.spec.ts","",""
+"","6072","Главная страница содержит заголовок","","Thu Dec 11 11:31:45 UTC 2025","failed","Thu Dec 11 11:31:51 UTC 2025","Тест класс","example-diff.spec.ts","",""
