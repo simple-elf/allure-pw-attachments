@@ -4,6 +4,7 @@ const config: PlaywrightTestConfig = {
   testDir: 'src/tests',
 
   reporter: [
+    process.env.CI ? ['github'] : ['list'],
     [
       'allure-playwright',
       {
