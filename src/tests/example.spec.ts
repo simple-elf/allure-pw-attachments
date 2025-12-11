@@ -67,4 +67,26 @@ test.describe("Тест класс", async () => {
 
     await expect(page).toHaveTitle(/Playwright123/);
   });
+
+  test('Главная страница содержит заголовок', async ({ page }) => {
+    await allure.attachment('attachment', 'Данные внутри теста', 'text/plain');
+
+    await allure.step('Переход на главную страницу', async () => {
+      await page.goto('/');
+      await allure.attachment('attachment', 'Данные внутри шага', 'text/plain');
+
+      await allure.step('Переход на главную страницу 2', async () => {
+        await allure.attachment('attachment', 'Данные внутри шага 2', 'text/plain');
+      });
+    });
+
+    await allure.step('Проверка заголовка', async () => {
+      await expect(page).toHaveTitle(/Playwright/);
+      await allure.attachment('attachment', 'Заголовок проверен', 'text/plain');
+    });
+
+    await allure.attachment('attachment', 'Данные внутри теста 2', 'text/plain');
+
+    // await expect(page).toHaveTitle(/Playwright123/);
+  });
 })
