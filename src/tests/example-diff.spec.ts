@@ -68,7 +68,7 @@ test.describe("Тест класс", async () => {
     await expect(page).toHaveTitle(/Playwright123/);
   });
 
-  test('Главная страница содержит заголовок', async ({ page }) => {
+  test('Главная страница содержит заголовок 2', async ({ page }) => {
     await allure.attachment('test-attachment', 'Данные внутри теста', 'text/plain');
 
     await allure.step('Переход на главную страницу', async () => {
