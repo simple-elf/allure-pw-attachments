@@ -22,15 +22,15 @@ const config: PlaywrightTestConfig = {
     locale: 'ru',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: {
-      mode: 'on-first-retry',
+      mode: 'on',
     },
 
     video: {
-      mode: 'retain-on-failure',
+      mode: 'on',
     },
 
     screenshot: {
-      mode: 'only-on-failure',
+      mode: 'on',
     },
   },
 
