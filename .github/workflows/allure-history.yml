@@ -17,7 +17,7 @@ on:
 
 jobs:
   autotests:
-    name: Upload allure results to Allure EE
+    name: Upload Allure Report to GitHub Pages
     runs-on: ubuntu-latest
     permissions:
       contents: write   # 👈 required
