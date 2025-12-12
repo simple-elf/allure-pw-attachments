@@ -32,7 +32,7 @@ jobs:
 
       - name: Run Test
         if: always()
-        run: yarn test --repeat-each 200
+        run: yarn test --repeat-each 20
         continue-on-error: true
 
       - name: Get Allure history
