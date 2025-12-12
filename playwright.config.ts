@@ -3,6 +3,9 @@ import type { PlaywrightTestConfig } from '@playwright/test';
 const config: PlaywrightTestConfig = {
   testDir: 'src/tests',
 
+  retries: 1,
+  workers: 7,
+
   reporter: [
     process.env.CI ? ['github'] : ['list'],
     [
