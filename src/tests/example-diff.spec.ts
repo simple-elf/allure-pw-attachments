@@ -25,7 +25,11 @@ test.afterAll(async ({}, testInfo) => {
 
 test.describe("Тест класс", async () => {
   test.beforeEach(async ({}, testInfo) => {
+    // fail the test
+    throw new Error('Intentional failure for test');
+
     await allure.attachment('beforeEach-attachment', 'Данные перед тестом', 'text/plain');
+
   });
 
   test.beforeEach(async ({}, testInfo) => {
