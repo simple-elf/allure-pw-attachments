@@ -40,6 +40,8 @@ test.describe("Тест класс", async () => {
 
   test.afterEach(async ({}, testInfo) => {
     await allure.attachment('afterEach-attachment', 'Данные после теста', 'text/plain');
+    // fail the test
+    throw new Error('Intentional failure for test');
   });
 
   test.afterEach(async ({}, testInfo) => {
@@ -90,6 +92,6 @@ test.describe("Тест класс", async () => {
 
     await allure.attachment('test2-attachment', 'Данные внутри теста 2', 'text/plain');
 
-    await expect(page).toHaveTitle(/Playwright123/);
+    // await expect(page).toHaveTitle(/Playwright123/);
   });
 })
