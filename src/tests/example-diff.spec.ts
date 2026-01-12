@@ -26,10 +26,9 @@ test.afterAll(async ({}, testInfo) => {
 test.describe("Тест класс", async () => {
   test.beforeEach(async ({}, testInfo) => {
     // fail the test
-    throw new Error('Intentional failure for test');
+    // throw new Error('Intentional failure for test');
 
     await allure.attachment('beforeEach-attachment', 'Данные перед тестом', 'text/plain');
-
   });
 
   test.beforeEach(async ({}, testInfo) => {
@@ -91,6 +90,6 @@ test.describe("Тест класс", async () => {
 
     await allure.attachment('test2-attachment', 'Данные внутри теста 2', 'text/plain');
 
-    // await expect(page).toHaveTitle(/Playwright123/);
+    await expect(page).toHaveTitle(/Playwright123/);
   });
 })
